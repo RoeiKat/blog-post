@@ -1,0 +1,17 @@
+.comment {
+    margin-top: 20px;
+}
+.comment input {
+    width: 50%;
+    padding: 10px 5px;
+    margin-right: 5px;
+    border: 2px solid #E7BB41;
+    border-radius: 10px;
+}
+.comment button {
+    padding: 7px;
+    border-radius: 15px;
+    border: none;
+    color: #E7E5DF;
+    background-color: #44BBA4;
+}

@@ -1,5 +1,6 @@
 import { useRef } from "react";
 import serverApi from '../../API/serverAPI';
+import './AddPost.css';
 
 const AddPost = (props) => {
   const postContent = useRef(null);
@@ -18,15 +19,13 @@ const AddPost = (props) => {
     postContent.current.value = '';
   };
   return (
-    <form>
+    <form className="add-post">
       <input
-        className="form-title"
         type="text"
         placeholder="Title"
         ref={postTitle}
       />
       <input
-        className="form-content"
         type="text"
         placeholder="Content"
         ref={postContent}

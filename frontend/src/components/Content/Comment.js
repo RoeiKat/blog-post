@@ -1,10 +1,11 @@
+import './Comment.css';
 const Comment = () => {
   const addCommentHandler = (event) => {
     event.preventDefault();
   };
 
   return (
-    <div>
+    <div className="comment">
       <form>
         <input type="text" placeholder="Type your comment here!" />
         <button onClick={addCommentHandler}>Add Comment</button>

@@ -1,0 +1,17 @@
+.single-post {
+    border: 1px solid #D3D0CB;
+    color: E7E5DF;
+    background-color: #393E41;
+    border-radius: 15px;
+    padding: 15px;
+    margin-bottom: 15px;
+    width: 50vw;
+}
+.post-title {
+    font-weight: 700;
+    font-size: 18px;
+    text-decoration: underline;
+}
+.post-content {
+    font-size: 14px;
+}

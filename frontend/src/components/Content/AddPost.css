@@ -1,0 +1,18 @@
+.add-post {
+    position: fixed;
+    bottom: 0;
+}
+
+.add-post input {
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid #44BBA4;
+    border-radius: 10px;
+}
+.add-post button {
+    border: none;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #44BBA4;
+    color: #E7E5DF
+}
