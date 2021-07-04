@@ -25,7 +25,7 @@ const commentRoutes = require('./routes/comment');
 
 app.use('/', userRoutes);
 app.use('/posts', postRoutes);
-app.use('/posts/:id/comment', commentRoutes);
+app.use('/comments', commentRoutes);
 
 mongoose.connect('mongodb://localhost:27017/blog-site', {useNewUrlParser: true});
 const db = mongoose.connection;

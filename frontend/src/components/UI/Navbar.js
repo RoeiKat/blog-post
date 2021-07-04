@@ -1,6 +1,7 @@
 import { Fragment } from "react";
 import { Link } from "react-router-dom";
 import './Navbar.css';
+import Logo from '../../logo.png';
 
 const Navbar = (props) => {
   const notLoggedInL = (
@@ -11,7 +12,8 @@ const Navbar = (props) => {
   );
   const loggedInL = (
     <Fragment>
-    <h3 className="username">{props.user}</h3>
+    
+    <span className="username">{props.user}</span>
     <Link to="/logout" onClick={props.onLogOut}>
       Log out
     </Link>
@@ -19,6 +21,7 @@ const Navbar = (props) => {
   );
 
   return <nav>
+    <img className="logo" src={Logo} alt="missing"/>
       {(!props.loggedIn && notLoggedInL) || loggedInL}
   </nav>;
 };

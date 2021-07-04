@@ -24,7 +24,7 @@ const Register = (props) => {
     <div className="div-register">
       <div className="info">
         <h3>Register Now!</h3>
-        <div>Sign up now to comment on the hottest posts out there!</div>
+        <div>Register to add new Posts or Comment on your favorite ones!</div>
       </div>
       <form className="form-register">
         <input type="text" placeholder="Username" ref={name} />

@@ -20,5 +20,13 @@ nav a:hover {
 }
 .username {
   color: #e7bb41;
-  width: 90%;
+  margin: 10px 5px;
+  font-size: 20px;
+  font-weight: 600;
+}
+.logo {
+  margin-top: 5px;
+  width: 36px;
+  height: 36px;
+  margin-right: auto;
 }

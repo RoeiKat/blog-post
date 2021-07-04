@@ -3,17 +3,17 @@ const router = express.Router();
 const Post = require('../models/post');
 const Comment = require('../models/comment')
 
-router.post('/', async (req, res) => {
+router.post('/:id', async (req, res) => {
     const post = await Post.findById(req.params.id);
-    const comment = new Comment(req.body.comment);
-    comment.user = req.user._id;
-    console.log(post);
-    console.log(comment);
-    console.log(comment.user);
-    // post.comments.push(comment);
-    // await comment.save();
-    // await post.save();
-    // res.json('Added a comment!');
+    const comment = req.body.comment
+    const nComment = new Comment({
+        comment,
+    });
+    post.comments.push(nComment);
+    await nComment.save();
+    await post.save()
+    .then (() => res.json('POST new comment'))
+    .catch (err => res.status(400).json('Error: ' + err))
 });
 
 router.delete('/:commentId' , async (req, res) => {

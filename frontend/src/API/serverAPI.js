@@ -40,12 +40,19 @@ const logIn = async (loginInfo) => {
   return response;
 }
 
-const addComment = async(comment) => {
-  const response = await fetch(`${URL}posts/:id/comment`, {
+const addComment = async(comment, id) => {
+  const response = await fetch(`${URL}comments/${id}`, {
     method: "POST",
-  })
+    mode: 'cors',
+    body: JSON.stringify(comment),
+    headers: {
+      "Content-Type": "application/json",
+    }
+  });
+  return response;
 }
 
-const serverApi = { fetchPosts, addPost, addUser, logIn };
+
+const serverApi = { fetchPosts, addPost, addUser, logIn, addComment };
 
 export default serverApi;

@@ -1,18 +1,69 @@
-.add-post {
-    position: fixed;
-    bottom: 0;
+.add-post-form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.show-less {
+    margin-left: auto;
+    border: none;
+    border-radius: 5px;
+    background-color: #44BBA4;
+    color: #E7E5DF;
+}
+.show-less:hover {
+    cursor: pointer;
+    background-color: #E7BB41;
+    color: #222;
 }
 
-.add-post input {
+.add-post-form input {
     margin: 10px;
     padding: 10px;
     border: 2px solid #44BBA4;
     border-radius: 10px;
 }
-.add-post button {
+.add-post-form-btn {
     border: none;
     padding: 10px;
     border-radius: 20px;
     background-color: #44BBA4;
-    color: #E7E5DF
+    color: #E7E5DF;
+    margin-left: auto;
+}
+.add-post-form-btn:hover {
+    cursor: pointer;
+    background-color: #E7BB41;
+    color: #222;
+}
+.add-post-form textarea {
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid #44BBA4;
+    border-radius: 10px;
+}
+.add-post-form textarea:focus {
+    outline: none;
+}
+.show-more {
+    margin-left: auto;
+}
+.add-post {
+    display: flex;
+    font-size: 12px;
+    border-top:1px solid #707579;
+    border-bottom:1px solid #707579;
+    color: #707579;
+    margin-bottom: 5px;
+}
+.add-post button {
+    margin-left: auto;
+    border: none;
+    border-radius: 5px;
+    background-color: #44BBA4;
+    color: #E7E5DF;
+}
+.add-post button:hover {
+    cursor: pointer;
+    background-color: #E7BB41;
+    color: #222;
 }

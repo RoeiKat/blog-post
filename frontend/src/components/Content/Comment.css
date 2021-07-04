@@ -2,7 +2,7 @@
     margin-top: 20px;
 }
 .comment input {
-    width: 50%;
+    width: 80%;
     padding: 10px 5px;
     margin-right: 5px;
     border: 2px solid #E7BB41;
@@ -14,4 +14,13 @@
     border: none;
     color: #E7E5DF;
     background-color: #44BBA4;
+}
+.comment button:hover {
+    cursor: pointer;
+    background-color: #E7BB41;
+    color: #222;
+}
+.comment-form {
+    display:flex;
+    justify-content: space-between;
 }

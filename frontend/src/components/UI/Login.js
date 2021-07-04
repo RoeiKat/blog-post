@@ -33,7 +33,7 @@ const Login = (props) => {
 
   return (
     <div className="div-login">
-      <h3>Login to submit posts!</h3>
+      <h3>Login</h3>
       <form className="form-login">
         <input type="text" placeholder="Username" ref={name} />
         <input type="password" placeholder="Password" ref={pass} />

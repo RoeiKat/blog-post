@@ -15,3 +15,23 @@
 .post-content {
     font-size: 14px;
 }
+.comment-container {
+    border: 1px solid #D3D0CB;
+    border-radius: 15px;
+}
+.comment-header {
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    text-decoration: underline;
+    color: #E7E5DF;
+    
+}
+.comment-text {
+    border-top: 1px solid #D3D0CB;
+    margin-top: 5px;
+    padding-left: 5px;
+    font-size: 12px;
+    font-weight: 300;
+}

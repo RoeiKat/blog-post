@@ -3,7 +3,7 @@ const router = express.Router();
 const Post = require('../models/post');
 
 router.get('/' , async (req, res) => {
-    await Post.find()
+    await Post.find().populate('comments')
     .then(post => res.json(post))
     .catch(err => res.status(400).json('Error:' + err));
 });
